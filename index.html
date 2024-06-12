@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Repar'Tout : Un lieu exceptionnel</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <a href="index.html"><p id="logo">Repar'Tout</p></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="#sectionServices">Nos services</a></li>
+                    <li><a href="#sectionTutos">Nos tutos</a></li>
+                    <li><a href="#sectionContact">Nous contacter</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="h1-flex">
+         <h1>Réparation ou dépannage?</br>Ne jetez pas vos appareils électroménagers</br>Faites-les réparer !</h1>
+        </div>
+
+        <!-- Section Search -->
+        <div class="search">
+            <div class="searchBar">
+
+            </div>
+            <div class="searchResult">
+                <div id="searchDrop">
+                    <div class="search50-1">
+                        <div class="dropdown zoneDrop" id="dropdown1">
+                            <button class="dropbtn">Type de produit<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                            <div class="dropdown-content posAbsolute1 typeProduit">
+                                <a href="#">Frigo</a>
+                                <a href="#">Lave-vaisselle</a>
+                                <a href="#">Lave-linge</a>
+                            </div>
+                        </div>
+                        <div class="dropdown zoneDrop" id="dropdown2">
+                            <button class="dropbtn">Marque<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                            <div class="dropdown-content posAbsolute2 typeMarque">
+                                <a href="#">Bosch</a>
+                                <a href="#">Samsung</a>
+                                <a href="#">Electrolux</a>
+                            </div>
+                        </div>
+                        <div class="dropdown zoneDrop" id="dropdown3">
+                            <button class="dropbtn">Modèle (si connu)<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                            <div class="dropdown-content posAbsolute2 typeModele">
+                                <a href="#">BXS456</a>
+                                <a href="#">EWR3453-3</a>
+                                <a href="#">SRJE3254</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search50-1">
+                        <input type="text" placeholder="Exemple : sèche-linge Samsung" class="search-bar">
+                        <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="result">
+                <div class="diag">
+                    <div class="model-aspi">
+                        <img src="./images/vacuum.png" alt="Aspirateur">
+                        <div class="model">
+                            <p class="model-perso">Votre modèle :</p>
+                            <p class="model-carac">Aspirateur Rowenta X-Force Flex 9.60</p>
+                        </div>
+                    </div>
+                    <div class="reparable">
+                        <div class="confirm-repar">
+                            <img src="./images/yeah.png" width="40" height="33">
+                            <p>Votre appareil est bien réparable chez nous</p>
+                        </div>
+                        <div class="buttonContact"><a href="#sectionContact" class="contact">Nous contacter</a></div>
+                    </div>
+                </div>
+                <div id="frameTutos">
+                    <div id="propTutos">
+                        <p>Voulez-vous réparer par vous même ?</p>
+                        <p>Voici des vidéos pour vous aider :</p>
+                        <div class="videos">
+                            <div class="vid" id="vid1"><div class="player"></div></div>
+                            <div class="vid" id="vid2"><div class="player"></div></div>
+                            <div class="vid" id="vid3"><div class="player"></div></div>
+                        </div>
+                        <a href="#">Accéder aux autres</br>tutos disponibles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- Section Services -->
+    <div class="container">
+        <div id="sectionServices" class="dualBlocs">
+            <div class="center-h2"><h2>Besoin d'aide ?</br><span>Découvrez nos services proposés :</span></h2></div>
+            <div id="contentServices">
+                <div class="imgBouton">
+                    <img src="./images/img-services.png" alt="Nos services" title="Nos services">
+                   <div class="linkCenter"><a href="#" class="bouton1">Nos services</a></div>
+                </div>
+                <div class="textServices">
+                    <p>Nous vous proposons divers services tel que la réparation 
+                        d’un de vos appareils électroménagers, au dépannage, 
+                        recyclage ou même conseil d’utilisation ou réparation par 
+                        soi-même.
+                    </p>
+                    <p>Tout type d’appareil électroménager peut nous être déposé 
+                        directement en magasins afin d’être restauré pour lui 
+                        permettre de servir encore plus longtemps !
+                    </p>    
+                    <p>Pour plus de détail sur nos services,
+                        nous vous invitons à cliquer sur le bouton
+                        “Nos services”.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- Section Tutos -->
+    <div class="container">
+        <div id="sectionTutos" class="dualBlocs">
+            <div class="center-h2"><h2>Envie de réparer par vous-même ?</br><span>Découvrez nos tutoriels :</span></h2></div>
+            <div id="contentTutos">
+                <div class="textServices">
+                    <p>Nous vous proposons des tutoriels vous permettant de régler des petits problèmes 
+                       lié à votre équipement électroménagers.
+                    </p>
+                    <p>Cette vidéo vous expliquera comment 
+                       fonctionne la page web qui leurs sont dédiés.
+                    </p>    
+                </div>
+                <div class="imgBouton">
+                    <div class="playTuto"><div class="play2"></div></div>
+                   <div class="linkCenter"><a href="#" class="bouton1">Nos tutoriels</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- Section Contact -->
+    <div class="container">
+        <div id="sectionContact">
+            <div class="center-h2"><h2>Vous souhaitez nous contacter ?</h2></div>
+            <div class="contentContact">
+                <div class="contactForm">
+                    <div class="model-aspi" id="modelAspi">
+                        <div class="contentModel">
+                            <img src="./images/vacuum.png" alt="Aspirateur">
+                            <div class="model">
+                                <p class="model-perso">Votre modèle :</p>
+                                <p class="model-carac">Aspirateur Rowenta X-Force Flex 9.60</p>
+                            </div>
+                        </div>       
+                        <div class="icon" id="closeBtn"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="choixService flexGap">
+                        <p>Je souhaite :</p>
+                        <div class="choice-buttons">
+                            <input type="radio" id="choixRepar" name="choice" checked>
+                            <label for="choixRepar">Une réparation</label>
+                    
+                            <input type="radio" id="choixDepan" name="choice">
+                            <label for="choixDepan">Un dépannage</label>
+                        </div>
+                    </div>
+                    <div class="nomPrenom">
+                       <div class="lastnameForm textInput flexGap">
+                            <p>Nom</p>
+                            <input type="text" placeholder="Mon nom de famille" class="searchForm">
+                        </div>
+                        <div class="nameForm textInput flexGap">
+                            <p>Nom</p>
+                            <input type="text" placeholder="Mon prénom" class="searchForm">
+                        </div>
+                    </div>
+                    <div class="telForm">
+                        <div class="telInput textInput50 flexGap">
+                            <p>Numéro de téléphone</p>
+                            <input type="text" placeholder="06 55 33 00 33" class="searchForm">
+                        </div>
+                    </div>
+                    <div class="emailForm">
+                        <div class="mailInput textInput flexGap">
+                            <p>Mail</p>
+                            <input type="text" placeholder="jesuisunclient@gmail.com" class="searchForm">
+                        </div>
+                    </div>
+                    <div class="textForm">
+                        <div class="msgInput textInput flexGap">
+                            <p>Message</p>
+                            <textarea type="text" rows="9" placeholder="J’ai un problème avec mon aspirateur, il ne s’allume plus." class="searchForm"></textarea>
+                        </div>
+                    </div>
+                    <div class="send">
+                        <a href="#">Envoyer</a>
+                    </div>
+                </div>
+                <div class="sectionInfos">
+                    <div class="map"><i class="fa-solid fa-location-dot pinMap"></i></div>
+                    <div class="contactInfos">
+                        <div class="lieuInfos flexInfos"><i class="fa-solid fa-location-dot"></i><p>Repar’Tout</br>123 rue Robert Le relou 35000 Rennes</p></div>
+                        <div class="telInfos flexInfos"><i class="fa-solid fa-phone"></i><p>02 99 11 82 18</p></div>
+                        <div class="emailInfos flexInfos"><i class="fa-solid fa-envelope"></i><p>robertleclient@repartout.com</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- Section Avis -->
+    <div class="container2">
+        <div id="sectionAvis">
+            <div class="center-h2"><h2>Les avis de nos clients pas trop chiants</h2></div>
+            <div class="containerAvis">
+                <div class="avisArrow" id="arrowLeft">
+                    <div class="circle">
+                        <div class="left"></div>
+                    </div>
+                </div>
+                <div class="avisCards">
+                    <div class="avisBox" id="avis1">
+                        <div class="avisContent">
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <div class="avisText">
+                                <p>Ceci est un avis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avisBox" id="avis2">
+                        <div class="avisContent">
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <div class="avisText">
+                                <p>Ceci est un avis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avisBox" id="avis3">
+                        <div class="avisContent">
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <div class="avisText">
+                                <p>Ceci est un avis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avisBox" id="avis4">
+                        <div class="avisContent">
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                            </div>
+                            <div class="avisText">
+                                <p>Ceci est un avis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avisArrow" id="arrowRight">
+                    <div class="circle">
+                        <div class="right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="linkCenter"><a href="#">Avis Google</a></div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="barreContent">
+                <div class="logoFooter"><a href="#"><p id="logoFooter">Repar'Tout</p></a></div>
+                <div class="liensFooter">
+                    <a href="#">Nos services</a>
+                    <a href="#">Nos tutos</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+                <div class="logoTrust"></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
