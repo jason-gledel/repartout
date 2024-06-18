@@ -91,6 +91,9 @@ p, button {
     letter-spacing: normal;
 }
 
+
+
+
 header {
     display: flex;
     padding: 10px 0;
@@ -111,7 +114,7 @@ header {
             }
         }
     }
-    #logo {
+    .logo {
         font-size: 30px;
         font-weight: 400;
         display: inline-block;
@@ -172,10 +175,8 @@ h1 {
         color: #1B365C;
         display: inline-block;
         border-radius: 35px;
-        background: #fff;
         line-height:35px;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin: 100px 0;
         span {
             font-size:25px;
             font-weight:normal;
@@ -447,6 +448,7 @@ h1 {
 }
 
 
+
 // SECTION SERVICES
 
 
@@ -505,6 +507,7 @@ h1 {
 }
 
 
+
 // SECTION TUTOS
 
 #sectionTutos {
@@ -555,6 +558,7 @@ h1 {
         }
     }
 }
+
 
 
 // SECTION FORM / CONTACT
@@ -756,15 +760,11 @@ textarea:focus {
 // SECTION AVIS
 
 #sectionAvis {
-    .center-h2 {
-        h2 {
-            margin-bottom: 40px;
-        }
-    }
+
     .containerAvis {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 60px;
         .avisArrow {
             display: flex;
             justify-content: center;
@@ -774,7 +774,7 @@ textarea:focus {
                 cursor: pointer;
                 width: 100px;
                 height: 100px;
-                background-color: #FDE9C2;
+                border: 3px #FDE9C2 solid;
                 border-radius: 50%; 
                 flex-shrink: 0; /* Empêche le cercle de se rétrécir */
                 display: flex;
@@ -801,16 +801,16 @@ textarea:focus {
         .avisCards {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 60px;
         width: 100%;
             .avisBox {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: auto;
-                background: #FDE9C2;
                 padding: 35px 30px;
-                border-radius: 35px;
+                border-radius: 10px;
+                border: 3px #FDE9C2 solid;
                 .avisContent {
                     display: flex;
                     flex-direction: column;
@@ -852,174 +852,117 @@ textarea:focus {
     gap: 20px
 }
 
+
 // FOOTER 
 
 footer {
+    padding: 40px 0;
     background: #A5A5A5;
-    padding: 42px 0;
-    .container {
-        .barreContent {
-            display: flex;
-            gap: 80px;
+    color: #1B365C;
+    .container-footer {
+        width: 90%;
+        margin: 0 auto;
+        .footerColumns {
             justify-content: space-between;
-            align-items: center;
-            .liensFooter {
+            display: flex;
+            .logo {
+                font-size: 30px;
+                font-weight: 400;
+                display: inline-block;
+            }
+            .coordFooter, .navFooter .listFooter, .resoFooter .listFooter, .trustFooter {
                 display: flex;
-                box-sizing: border-box;
-                justify-content: center;
-                gap: 40px;
-                a {
-                    font-size: 20px;
+                flex-direction: column;
+            }
+            .trustColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .trustFooter {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    .trustLogo {
+                        background-image: url(../images/trustpilot.png);
+                        width: 163px;
+                        height: 40px;
+                        background-size: contain;
+                    }
+                    .trustNote {
+                        p {
+                            color: #000;
+                            font-size: 30px;
+                        }
+                    }
                 }
             }
-            .logoTrust {
-                background-image: url(../images/trustpilot.png);
-                width: 250px;
-                height: 65px;
-                background-size: contain;
+            .listFooter {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .titleFooter {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .subList {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    p, a {
+                        font-size: 16px;
+                    }
+                }
+                .resoList {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+                    align-items: center;
+                    i {
+                        font-size: 30px;
+                    }
+                    .fbFooter, .xFooter, .ytbFooter, .instaFooter {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .xFooter {
+                        background-image: url(../images/x.png);
+                        width: 25px;
+                        height: 27px;
+                        background-size: contain;
+                    }
+                }
+            }
+            .listReso {
+                align-items: center;
             }
         }
     }
 }
 
-#logoFooter{
-    font-size: 30px;
-    font-weight: 400;
-    display: inline-block;
+#subFooter {
+    padding: 10px;
+    background: #1B365C;
+    .contentSubFooter {
+        display: flex;
+        gap: 10px;
+        p {
+            color: #fff;
+            font-size: 13px;
+        }
+    }
 }
+
 
 
 #avisMobile {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    .rating {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        .ratingStar {
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-            .starIcon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                i {
-                    color: #FFC368;
-                    font-size: 30px;
-                }
-            }
-            p.ratingNumber {
-                color: #FFC368;
-                font-size: 30px;
-                font-weight: bold;
-            }
-        }
-        .chiffreAvis {
-            display: flex;
-            justify-content: center;
-            p.nombreAvis {
-                font-size: 12px;
-            }
-        }
-
-        .jaugesAvis {
-            .star1 {
-               display: block; 
-            }
-        }
-    }
-    .jaugesAvis {
-        display: flex;
-        justify-content: space-between;
-        .star {
-            display: flex;
-            flex-direction: column;
-            width: 15%;
-            gap: 10px;
-           .jaugeTube {
-            border: 1px #FFC368 solid;
-            border-radius: 10px;
-            height: 100px;
-            overflow: hidden;
-           }
-        }
-    }
-    .jaugeStar {
-        display: flex;
-        align-items: center;
-        .starTube {
-            i {
-                color: #FFC368;
-                font-size: 24px;
-            }
-        }
-        p.starsTube {
-            color: #FFC368;
-            font-weight: bold;
-            font-size: 20px;
-        }
-    }
+    display: none;
 }
 
-
-.note1 {
-    display: flex;
-    flex-direction: column-reverse;
-    .remplissage {
-        height: 20%;
-        background: #FFC368;
-
-    }
-} 
-.note2 {
-    display: flex;
-    flex-direction: column-reverse;
-    .remplissage {
-        height: 40%;
-        background: #FFC368;
-    }
-} 
-
-.note3 {
-    display: flex;
-    flex-direction: column-reverse;
-    .remplissage {
-        height: 60%;
-        background: #FFC368;
-
-    }
-} 
-
-.note4 {
-    display: flex;
-    flex-direction: column-reverse;
-    .remplissage {
-        height: 80%;
-        background: #FFC368;
-
-    }
-} 
-.note5 {
-    display: flex;
-    flex-direction: column-reverse;
-    .remplissage {
-        height: 100%;
-        background: #FFC368;
-
-    }
-} 
-
-
-
-
-
-
-
-
+.mobileShow {
+    display: none;
+}
 
 
 
@@ -1071,6 +1014,18 @@ footer {
 
 
 @media screen and (max-width: 1160px) {
+
+
+
+    #sectionContact {
+        .contentContact {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+
 
     .container {
         width: 100%;
@@ -1212,6 +1167,219 @@ footer {
 
 
 @media screen and (max-width: 800px) {
+
+    .mobileShow {
+        display: inline-block;
+    }
+
+
+    #avisMobile {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 50px;
+        .rating {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .ratingStar {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                .starIcon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        color: #FFC368;
+                        font-size: 30px;
+                    }
+                }
+                p.ratingNumber {
+                    color: #FFC368;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            .chiffreAvis {
+                display: flex;
+                justify-content: center;
+                p.nombreAvis {
+                    font-size: 12px;
+                }
+            }
+    
+            .jaugesAvis {
+                .star1 {
+                   display: block; 
+                }
+            }
+        }
+        .contentAvis {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .jaugesAvis {
+                .jaugeStar {
+                    display: flex;
+                    align-items: center;
+                    .starTube {
+                        i {
+                            color: #FFC368;
+                            font-size: 24px;
+                        }
+                    }
+                    p.starsTube {
+                        color: #FFC368;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+                display: flex;
+                justify-content: space-between;
+                .star {
+                    display: flex;
+                    flex-direction: column;
+                    width: 15%;
+                    gap: 10px;
+                .jaugeTube {
+                    border: 1px #FFC368 solid;
+                    border-radius: 10px;
+                    height: 100px;
+                    overflow: hidden;
+                    position: relative;
+                    p.nmbre {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 13px;
+                    }
+                }
+                }
+            }
+            #sectionComm {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .commTop {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    p.className {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    .commTag {
+                        gap: 5px;
+                        display: flex;
+                        align-items: center;
+                        .commStar {
+                            gap: 5px;
+                            display: flex;
+                            align-items: center;
+                            i {
+                                font-size: 15px;
+                                color: #FFC368;
+                            }
+                            p {
+                                font-size: 11px;
+                                padding-right: 5px;
+                                border-right: 1px #1B365C solid;
+                            }
+                        }
+                        p.commNote {
+                            font-size: 11px;
+                        }
+                    }
+                }
+                .commText {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    p.commTitre {
+                        font-size: 16px;
+                    }
+                    p.commContent {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    header {
+        .nav {
+            display: none;
+        }
+    }
+
+
+    footer {
+        .container-footer {
+            .footerColumns {
+                flex-direction: column;
+            }
+        }
+    }
+
+
+
+    
+    .note1 {
+        display: flex;
+        flex-direction: column-reverse;
+        .remplissage {
+            height: 20%;
+            background: #FFC368;
+    
+        }
+    } 
+    .note2 {
+        display: flex;
+        flex-direction: column-reverse;
+        .remplissage {
+            height: 40%;
+            background: #FFC368;
+        }
+    }   
+    .note3 {
+        display: flex;
+        flex-direction: column-reverse;
+        .remplissage {
+            height: 60%;
+            background: #FFC368;
+    
+        }
+    }    
+    .note4 {
+        display: flex;
+        flex-direction: column-reverse;
+        .remplissage {
+            height: 80%;
+            background: #FFC368;
+    
+        }
+    } 
+    .note5 {
+        display: flex;
+        flex-direction: column-reverse;
+        .remplissage {
+            height: 100%;
+            background: #FFC368;
+    
+        }
+    } 
+    
+    
+    
+
+
+
 
 
     .container2 {
@@ -1396,6 +1564,18 @@ footer {
         border-radius: 30px;
         color: #1B365C;
         background: #fff;
+    }
+}
+
+.linkCenter-mobile-blue {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    a {
+        padding: 5px 10px;
+        border-radius: 30px;
+        color: #fff;
+        background: #1B365C;
     }
 }
 

@@ -15,7 +15,7 @@
 
     <div class="container">
         <header>
-            <a href="index.html"><p id="logo">Repar'Tout</p></a>
+            <a href="index.html"><p class="logo">Repar'Tout</p></a>
             <div class="nav">
                 <ul>
                     <li><a href="#sectionServices">Nos services</a></li>
@@ -331,20 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="avisBox" id="avis4">
-                        <div class="avisContent">
-                            <div class="stars">
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-                            <div class="avisText">
-                                <p>Ceci est un avis</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="avisArrow" id="arrowRight">
                     <div class="circle">
@@ -358,6 +345,7 @@
     </div>
 
     <div class="container">
+        <div class="center-h2 mobileShow"><h2>Les avis de nos clients pas trop chiants</h2></div>
         <div id="avisMobile">
             <div class="rating">
                 <div class="ratingStar">
@@ -369,71 +357,140 @@
                 </div>
 
             </div>
-            <div class="jaugesAvis">
-                <div class="star" id="star1">
-                    <div class="jaugeTube note1">
-                        <div class="remplissage"></div>
+
+            <div class="contentAvis">
+                <div class="jaugesAvis">
+                    <div class="star" id="star1">
+                        <div class="jaugeTube note1">
+                            <div class="remplissage"></div>
+                            <p class="nmbre">0</p>
+                        </div>
+                        <div class="jaugeStar">
+                            <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                            <p class="starsTube">1</p>
+                        </div>
                     </div>
-                    <div class="jaugeStar">
-                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
-                        <p class="starsTube">1</p>
+                    <div class="star" id="star2">
+                        <div class="jaugeTube note2">
+                            <div class="remplissage"></div>
+                            <p class="nmbre">0</p>
+                        </div>
+                        <div class="jaugeStar">
+                            <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                            <p class="starsTube">2</p>
+                        </div>
+                    </div>
+                    <div class="star" id="star3"> 
+                        <div class="jaugeTube note3">
+                            <div class="remplissage"></div>
+                            <p class="nmbre">2</p>
+                        </div>
+                        <div class="jaugeStar">
+                            <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                            <p class="starsTube">3</p>
+                        </div>
+                    </div>
+                    <div class="star" id="star4">
+                        <div class="jaugeTube note4">
+                            <div class="remplissage"></div>
+                            <p class="nmbre">18</p>
+                        </div>
+                        <div class="jaugeStar">
+                            <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                            <p class="starsTube">4</p>
+                        </div>
+                    </div>
+                    <div class="star">
+                        <div class="jaugeTube note5" id="star5">
+                            <div class="remplissage"></div>
+                            <p class="nmbre">30</p>
+                        </div>
+                        <div class="jaugeStar">
+                            <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                            <p class="starsTube">5</p>
+                        </div>
                     </div>
                 </div>
-                <div class="star" id="star2">
-                    <div class="jaugeTube note2">
-                        <div class="remplissage"></div>
+
+                <div id="sectionComm">
+                    <div class="commTop">
+                        <p class="className">Josiane P.</p>
+                        <div class="commTag">
+                            <div class="commStar">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p>5</p>
+                            </div>
+                            <p class="commNote">Le mieux noté</p>
+                        </div>
                     </div>
-                    <div class="jaugeStar">
-                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
-                        <p class="starsTube">2</p>
-                    </div>
-                </div>
-                <div class="star" id="star3"> 
-                    <div class="jaugeTube note3">
-                        <div class="remplissage"></div>
-                    </div>
-                    <div class="jaugeStar">
-                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
-                        <p class="starsTube">3</p>
-                    </div>
-                </div>
-                <div class="star" id="star4">
-                    <div class="jaugeTube note4">
-                        <div class="remplissage"></div>
-                    </div>
-                    <div class="jaugeStar">
-                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
-                        <p class="starsTube">4</p>
-                    </div>
-                </div>
-                <div class="star">
-                    <div class="jaugeTube note5" id="star5">
-                        <div class="remplissage"></div>
-                    </div>
-                    <div class="jaugeStar">
-                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
-                        <p class="starsTube">5</p>
+                    <div class="commText">
+                        <p class="commTitre">Réparation rapide !</p>
+                        <p class="commContent">
+                            Mon lave-vaisselle faisait un bruit étrange lorsqu'il était en marche, un truc comme AHKIKIKIKI...Mais depuis que je l’ai amené en réparation chez Repar’Tout, tout se passe mieux !
+                        </p>
                     </div>
                 </div>
             </div>
-
+            <div class="linkCenter-mobile-blue"><a href="#" class="bouton1">Voir tous les avis</a></div>
         </div>
     </div>
 
     <footer>
-        <div class="container">
-            <div class="barreContent">
-                <div class="logoFooter"><a href="#"><p id="logoFooter">Repar'Tout</p></a></div>
-                <div class="liensFooter">
-                    <a href="#">Nos services</a>
-                    <a href="#">Nos tutos</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Mentions légales</a>
+        <div class="container-footer">
+            <div class="footerColumns">
+                <a href="index.html"><p class="logo">Repar'Tout</p></a>
+                <div class="coordFooter">
+                    <div class="listFooter">
+                        <p class="titleFooter">Coordonnées</p>
+                        <div class="subList">
+                            <p>123 rue Robert le Relou 35000 Rennes</p>
+                            <p>02-99-99-99-99</p>
+                            <p>robertlerelou@repartout.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="logoTrust"></div>
+                <div class="navFooter">
+                    <div class="listFooter">
+                        <p class="titleFooter">Navigation</p>
+                        <div class="subList">
+                            <a href="#">Nos services</a>
+                            <a href="#">Nos tutos</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="resoFooter">
+                    <div class="listFooter listReso">
+                        <p class="titleFooter">Nos réseaux</p>
+                        <div class="resoList">
+                            <a href="#"><div class="fbFooter"><i class="fa-brands fa-facebook"></i></div></a>
+                           <a href="#"><div class="xFooter"></div></a>
+                            <a href="#"><div class="ytbFooter"><i class="fa-brands fa-youtube"></i></div></a>
+                            <a href="#"><div class="instaFooter"><i class="fa-brands fa-instagram"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trustColumn">
+                    <div class="trustFooter">
+                        <div class="trustLogo">
+
+                        </div>
+                        <div class="trustNote">
+                            <p>4,4/5</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+
+    <div id="subFooter">
+        <div class="contentSubFooter">
+            <p>Copyright © 2020 - 2024 - Tous droits réservés.</p>
+            <a href="#"><p>Mentions Légales</p></a>
+        </div>
+    </div>
 
 
 
