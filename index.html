@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +26,15 @@
         </header>
 
         <div class="h1-flex">
-         <h1>Réparation ou dépannage?</br>Ne jetez pas vos appareils électroménagers</br>Faites-les réparer !</h1>
+         <h1>Réparation ou dépannage?<span><br>Ne jetez pas vos appareils électroménagers<br>Faites-les réparer !</span></h1>
         </div>
 
         <!-- Section Search -->
         <div class="search">
-            <div class="searchBar">
 
-            </div>
             <div class="searchResult">
                 <div id="searchDrop">
-                    <div class="search50-1">
+                    <div class="search50-1 droplist">
                         <div class="dropdown zoneDrop" id="dropdown1">
                             <button class="dropbtn">Type de produit<i class="fa-solid fa-angle-down arrowDown"></i></button>
                             <div class="dropdown-content posAbsolute1 typeProduit">
@@ -62,30 +60,72 @@
                             </div>
                         </div>
                     </div>
-                    <div class="search50-1">
+                    <div class="search50-1 dropbar">
                         <input type="text" placeholder="Exemple : sèche-linge Samsung" class="search-bar">
                         <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
                     </div>
+                    
                 </div>
+                <div class="filterBox">
+                    <div class="filterDrop"></div>
+                </div>
+            </div>
+
+            <div id="filterMobile">
+
+                    <div class="dropdown zoneDrop">
+                        <button class="dropbtn">Type de produit<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                        <div class="dropdown-content posAbsolute1 typeProduit">
+                            <a href="#">Frigo</a>
+                            <a href="#">Lave-vaisselle</a>
+                            <a href="#">Lave-linge</a>
+                        </div>
+                    </div>
+                    <div class="dropdown zoneDrop">
+                        <button class="dropbtn">Marque<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                        <div class="dropdown-content posAbsolute2 typeMarque">
+                            <a href="#">Bosch</a>
+                            <a href="#">Samsung</a>
+                            <a href="#">Electrolux</a>
+                        </div>
+                    </div>
+                    <div class="dropdown zoneDrop">
+                        <button class="dropbtn">Modèle (si connu)<i class="fa-solid fa-angle-down arrowDown"></i></button>
+                        <div class="dropdown-content posAbsolute2 typeModele">
+                            <a href="#">BXS456</a>
+                            <a href="#">EWR3453-3</a>
+                            <a href="#">SRJE3254</a>
+                        </div>
+                    </div>
 
             </div>
+
+
             <div id="result">
                 <div class="diag">
                     <div class="model-aspi">
-                        <img src="./images/vacuum.png" alt="Aspirateur">
-                        <div class="model">
-                            <p class="model-perso">Votre modèle :</p>
-                            <p class="model-carac">Aspirateur Rowenta X-Force Flex 9.60</p>
+                        <div class="modelLeft">
+                            <img src="./images/vacuum.png" alt="Aspirateur">
+                            <div class="model">
+                                <p class="model-perso">Votre modèle :</p>
+                                <p class="model-carac">Aspirateur Rowenta X-Force Flex 9.60</p>
+                            </div>
                         </div>
+                        <div class="iconClose"><i class="fa-solid fa-xmark"></i></div>
                     </div>
                     <div class="reparable">
                         <div class="confirm-repar">
-                            <img src="./images/yeah.png" width="40" height="33">
+                            <img src="./images/yeah.png" width="40" height="33" alt="Coche validation">
                             <p>Votre appareil est bien réparable chez nous</p>
                         </div>
                         <div class="buttonContact"><a href="#sectionContact" class="contact">Nous contacter</a></div>
                     </div>
+                    <div class="buttonContact contactMobile"><a href="#sectionContact" class="contact">Nous contacter</a></div>
                 </div>
+
+
+
+
                 <div id="frameTutos">
                     <div id="propTutos">
                         <p>Voulez-vous réparer par vous-même ?</p>
@@ -95,10 +135,11 @@
                             <div class="vid" id="vid2"><div class="player"></div></div>
                             <div class="vid" id="vid3"><div class="player"></div></div>
                         </div>
-                        <a href="#">Accéder aux autres</br>tutos disponibles</a>
+                        <a href="#">Accéder aux autres<br>tutos disponibles</a>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -110,7 +151,7 @@
     <!-- Section Services -->
     <div class="container">
         <div id="sectionServices" class="dualBlocs">
-            <div class="center-h2"><h2>Besoin d'aide ?</br><span>Découvrez nos services proposés :</span></h2></div>
+            <div class="center-h2"><h2>Besoin d'aide ?<br><span>Découvrez nos services proposés :</span></h2></div>
             <div id="contentServices">
                 <div class="imgBouton">
                     <img src="./images/img-services.png" alt="Nos services" title="Nos services">
@@ -131,6 +172,7 @@
                         “Nos services”.
                     </p>
                 </div>
+                <div class="linkCenter-mobile"><a href="#" class="bouton1">Nos services</a></div>
             </div>
         </div>
     </div>
@@ -141,8 +183,10 @@
     <!-- Section Tutos -->
     <div class="container">
         <div id="sectionTutos" class="dualBlocs">
-            <div class="center-h2"><h2>Envie de réparer par vous-même ?</br><span>Découvrez nos tutoriels :</span></h2></div>
+            <div class="center-h2"><h2>Envie de réparer par vous-même ?<br><span>Découvrez nos tutoriels :</span></h2></div>
             <div id="contentTutos">
+                <div class="linkCenter-mobile"><a href="#" class="bouton1">Nos services</a></div>
+
                 <div class="textServices">
                     <p>Nous vous proposons des tutoriels vous permettant de régler des petits problèmes 
                        lié à votre équipement électroménagers.
@@ -163,9 +207,9 @@
 
 
     <!-- Section Contact -->
-    <div class="container">
+    <div class="container-contact">
         <div id="sectionContact">
-            <div class="center-h2"><h2>Vous souhaitez nous contacter ?</h2></div>
+            <div class="center-h2"><h2>Vous souhaitez nous contacter&nbsp;?</h2></div>
             <div class="contentContact">
                 <div class="contactForm">
                     <div class="model-aspi" id="modelAspi">
@@ -194,7 +238,7 @@
                             <input type="text" placeholder="Mon nom de famille" class="searchForm">
                         </div>
                         <div class="nameForm textInput flexGap">
-                            <p>Nom</p>
+                            <p>Prénom</p>
                             <input type="text" placeholder="Mon prénom" class="searchForm">
                         </div>
                     </div>
@@ -213,7 +257,7 @@
                     <div class="textForm">
                         <div class="msgInput textInput flexGap">
                             <p>Message</p>
-                            <textarea type="text" rows="9" placeholder="J’ai un problème avec mon aspirateur, il ne s’allume plus." class="searchForm"></textarea>
+                            <textarea rows="9" placeholder="J’ai un problème avec mon aspirateur, il ne s’allume plus." class="searchForm"></textarea>
                         </div>
                     </div>
                     <div class="send">
@@ -223,15 +267,14 @@
                 <div class="sectionInfos">
                     <div class="map"><i class="fa-solid fa-location-dot pinMap"></i></div>
                     <div class="contactInfos">
-                        <div class="lieuInfos flexInfos"><i class="fa-solid fa-location-dot"></i><p>Repar’Tout</br>123 rue Robert Le relou 35000 Rennes</p></div>
+                        <div class="lieuInfos flexInfos"><i class="fa-sharp fa-solid fa-location-dot"></i><p>Repar’Tout<br>123 rue Robert Le Relou 35000 Rennes</p></div>
                         <div class="telInfos flexInfos"><i class="fa-solid fa-phone"></i><p>02 99 11 82 18</p></div>
                         <div class="emailInfos flexInfos"><i class="fa-solid fa-envelope"></i><p>robertleclient@repartout.com</p></div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-
+    </div>
     <div class="line"></div>
 
 
@@ -310,6 +353,69 @@
                 </div>
             </div>
             <div class="linkCenter"><a href="#">Avis Google</a></div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="avisMobile">
+            <div class="rating">
+                <div class="ratingStar">
+                    <div class="starIcon"><i class="fa-sharp fa-solid fa-star"></i></div>
+                    <p class="ratingNumber">4,6/5</p>
+                </div>
+                <div class="chiffreAvis">
+                    <p class="nombreAvis">50 avis</p>
+                </div>
+
+            </div>
+            <div class="jaugesAvis">
+                <div class="star" id="star1">
+                    <div class="jaugeTube note1">
+                        <div class="remplissage"></div>
+                    </div>
+                    <div class="jaugeStar">
+                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                        <p class="starsTube">1</p>
+                    </div>
+                </div>
+                <div class="star" id="star2">
+                    <div class="jaugeTube note2">
+                        <div class="remplissage"></div>
+                    </div>
+                    <div class="jaugeStar">
+                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                        <p class="starsTube">2</p>
+                    </div>
+                </div>
+                <div class="star" id="star3"> 
+                    <div class="jaugeTube note3">
+                        <div class="remplissage"></div>
+                    </div>
+                    <div class="jaugeStar">
+                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                        <p class="starsTube">3</p>
+                    </div>
+                </div>
+                <div class="star" id="star4">
+                    <div class="jaugeTube note4">
+                        <div class="remplissage"></div>
+                    </div>
+                    <div class="jaugeStar">
+                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                        <p class="starsTube">4</p>
+                    </div>
+                </div>
+                <div class="star">
+                    <div class="jaugeTube note5" id="star5">
+                        <div class="remplissage"></div>
+                    </div>
+                    <div class="jaugeStar">
+                        <div class="starTube"><i class="fa-sharp fa-solid fa-star"></i></div>
+                        <p class="starsTube">5</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
