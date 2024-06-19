@@ -581,10 +581,11 @@ h1 {
             height: 308px;
             border-radius: 35px;
             margin-bottom: 40px;
-            background: #F94E4E;
+            background-image: url(../images/ytbimg.jpeg);
             display: flex;
             align-items: center;
             justify-content: center;
+            background-size: cover;
             .play2 {
                 width: 83px;
                 height: 92px;
